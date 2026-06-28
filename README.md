@@ -69,7 +69,7 @@ These findings suggest that educational progression, information-seeking behavio
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/algorithmic-behavioral-phenotyping.git
+git clone https://github.com/ikechukwukamalu8/algorithmic-behavioral-phenotyping.git
 cd algorithmic-behavioral-phenotyping
 ```
 
