@@ -16,13 +16,14 @@ This framework automates features transformation and predictive validation bound
 ├── model_pipeline.py                         # Production-grade standalone Python script
 ├── requirements.txt                          # Project environmental requirements
 └── README.md                                 # Project documentation 
+```
 ## 📊 Pipeline Validation Performance Metrics
 
 The workflow splits and evaluates out-of-sample data points using a stratified target strategy to ensure balanced phenotype representation across compliance classes.
 
 ### Classification Boundary Report
 
-```text
+```
 ==================================================
 CLASSIFICATION BOUNDARY REPORT
 ==================================================
