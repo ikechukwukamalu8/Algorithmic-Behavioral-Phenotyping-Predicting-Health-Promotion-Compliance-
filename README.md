@@ -83,7 +83,7 @@ These findings indicate that health-promotion compliance emerges from behavioura
 
 ---
 
-# Repository Structure
+## 📁 Repository Structure
 
 ```text
 behavioral-phenotyping-ml/
@@ -95,11 +95,11 @@ behavioral-phenotyping-ml/
 │   ├── behavioral_phenotyping_pipeline.pkl
 │   ├── model_benchmark_results.csv
 │   ├── permutation_importances.csv
+│   ├── permutation_importances.png
 │   ├── misclassified_cases.csv
 │   ├── confusion_matrix.png
 │   ├── roc_pr_curves.png
 │   └── shap_summary_plot.png
-│   ├── permutation_importances.png
 │
 ├── train_phenotyping_model.py
 ├── requirements.txt
@@ -236,20 +236,20 @@ Output:
 
 ---
 
-# Generated Outputs
+## 📦 Generated Reports & Visualizations
 
-After execution, the following artifacts are automatically generated.
+After execution, the pipeline automatically generates the following artifacts.
 
-| Output | Description |
-|---------|-------------|
-| behavioral_phenotyping_pipeline.pkl | Serialized production pipeline |
-| model_benchmark_results.csv | Cross-validation benchmark |
-| permutation_importances.csv | Feature importance values |
-| misclassified_cases.csv | Holdout classification errors |
-| confusion_matrix.png | Confusion matrix visualization |
-| roc_pr_curves.png | ROC and Precision-Recall curves |
-| shap_summary_plot.png | SHAP explainability plot |
-
+| Output File | Description |
+|--------------|-------------|
+| `behavioral_phenotyping_pipeline.pkl` | Serialized production-ready machine learning pipeline |
+| `model_benchmark_results.csv` | Cross-validation benchmark results for all evaluated models |
+| `permutation_importances.csv` | Numerical permutation importance scores for every feature |
+| `permutation_importances.png` | Publication-quality visualization of the top predictive features |
+| `misclassified_cases.csv` | Misclassified observations from the holdout test set for error analysis |
+| `confusion_matrix.png` | Confusion matrix of the champion model on unseen data |
+| `roc_pr_curves.png` | Combined ROC and Precision–Recall curves |
+| `shap_summary_plot.png` | SHAP summary plot explaining global feature contributions (generated when SHAP is installed) |
 ---
 
 # Dependencies
