@@ -1,0 +1,83 @@
+Feature,Importance_Mean,Importance_Std
+How Often do you engage in phy_Ord,0.15030303030303035,0.030035179862700285
+Are you aware of the importanc_Ord,0.020303030303030344,0.008994437624033841
+How Often do you abstain from _Ord,0.01969696969696972,0.007453559924999306
+How Often do you avoid consumi_Ord,0.017878787878787918,0.011614404785901098
+Department_Dentistry,0.017878787878787886,0.0016318681233740823
+Do you often refrain from usin_Ord,0.013939393939393977,0.008698606117822628
+How Often do you consume a Bal_Ord,0.013939393939393974,0.009601805768336292
+Are you aware of the World Hea_Ord,0.01090909090909094,0.0071965709618411625
+Are you aware that a Balanced__Ord,0.010606060606060641,0.005789385810467509
+"On average, how Often do you t_Ord",0.010303030303030336,0.010687995205180843
+Do you think regular Physical__Ord,0.009393939393939439,0.016511676031303373
+Are you aware that breakfast i_Ord,0.009393939393939432,0.005496471862793046
+Are you aware of healthy lifes_Ord,0.009090909090909143,0.003319530651546462
+Faculty_Faculty_of_dentistry,0.008787878787878844,0.0016318681233741031
+Department_Physiology,0.007575757575757613,0.005292196726234248
+How Often do you undergo STI s_Ord,0.00757575757575761,0.012439015607135635
+Do you avoid behaviours harmfu_Ord,0.007272727272727297,0.006803013430498083
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Workshops,0.005757575757575783,0.007599961335748156
+How Often do you consume sugar_Ord,0.005757575757575783,0.005976691794944263
+Which of the following areas were emphasized in the health promotion activities you participated in? (Select all that apply)   [Balanced_diet and nutrition]_Sexual_health,0.005757575757575783,0.005976691794944263
+How Often do you go for Medica_Ord,0.005454545454545478,0.008968877931484091
+Faculty_Faculty_of_basic_medical_sciences,0.004848484848484883,0.005106757438288726
+How Often do you avoid recreat_Ord,0.00424242424242427,0.0056203748457549895
+Level_Num,0.003939393939393957,0.006506336531389066
+What was the nature of the health promotion activities you participated in or received?_Medical_and_preventive_programs,0.0036363636363636598,0.004453617714151261
+Can you say that the Universit_Ord,0.0036363636363636598,0.004453617714151261
+Department_Nursing,0.0033333333333333587,0.006836675256168782
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Seminars,0.003333333333333355,0.005496471862793064
+Are you aware of the health ri_Ord,0.00242424242424244,0.004020151261036874
+How Often do you engage in at _Ord,0.0021212121212121496,0.008359463166141648
+Which of the following areas were emphasized in the health promotion activities you participated in? (Select all that apply)   [Balanced_diet and nutrition]_Psychoactive_substance_use,0.0018181818181818299,0.0036363636363636598
+Department_Radiography,0.0012121212121212273,0.004535342286998729
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Courses,0.00121212121212122,0.0030903148567229194
+Are you aware of safe sexual p_Ord,0.00060606060606061,0.0022676711434993727
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Policies,0.00060606060606061,0.0022676711434993727
+How Often do you avoid using a_Ord,0.00030303030303032347,0.00549647186279305
+How did you become aware of these health promotion activities? (Select all that apply) [Email_or_newsletter]_Peer_recommendations,0.000303030303030305,0.0016318681233741031
+How Often do you follow a plan_Ord,2.590520390792032e-17,0.007041787902195302
+What was the nature of the health promotion activities you participated in or received?_Educational_programs,0.0,0.0
+Religion_Others,0.0,0.0
+What was the nature of the health promotion activities you participated in or received?_Behavioral_change_programs,0.0,0.0
+Religion_Traditional_religion,0.0,0.0
+Age_18-25years,0.0,0.0
+Age_>25 years,0.0,0.0
+Age_15-18years,0.0,0.0
+Age_18-25 years,0.0,0.0
+Religion_Christianity,0.0,0.0
+Department_Medical_rehabilitation,0.0,0.0
+Department_Medicine,0.0,0.0
+Department_Medical_laboratory_science,0.0,0.0
+Can you say that the variety o_Ord,0.0,0.0
+Do you Know where to access in_Ord,0.0,0.0
+What was the nature of the health promotion activities you participated in or received?_Social_change_programs,0.0,0.0
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Screening_programs,0.0,0.0
+Which of the following areas were emphasized in the health promotion activities you participated in? (Select all that apply)   [Balanced_diet and nutrition]_Physical_activity,0.0,0.0
+How did you become aware of these health promotion activities? (Select all that apply) [Email_or_newsletter]_University_website,0.0,0.0
+What was the nature of the health promotion activities you participated in or received?_Empowerment_programs,0.0,0.0
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Educational_programs,0.0,0.0
+Which of the following areas were emphasized in the health promotion activities you participated in? (Select all that apply)   [Balanced_diet and nutrition]_Phyical activity,0.0,0.0
+Which of the following areas were emphasized in the health promotion activities you participated in? (Select all that apply)   [Balanced_diet and nutrition]_Balanced_diet,0.0,0.0
+Which of the following areas were emphasized in the health promotion activities you participated in? (Select all that apply)   [Balanced_diet and nutrition]_Balance diet,0.0,0.0
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Counselling_programs,0.0,0.0
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Campaigns,0.0,0.0
+Which of the following areas were emphasized in the health promotion activities you participated in? (Select all that apply)   [Balanced_diet and nutrition]_Phyical_activity,0.0,0.0
+How did you become aware of these health promotion activities? (Select all that apply) [Email_or_newsletter]_Social_media,-0.0003030303030302754,0.007228400267803974
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Lectures,-0.0003030303030303013,0.0016318681233740823
+Age_>25years,-0.0006060606060606026,0.0022676711434993454
+Which types of health promotion activities do you think are most beneficial for undergraduate students? (Select up to three) [Policies]_Social_media_programs,-0.0006060606060606026,0.0022676711434993454
+Are you aware of what healthy _Ord,-0.000909090909090889,0.005429234202172395
+How did you become aware of these health promotion activities? (Select all that apply) [Email_or_newsletter]_Campaigns,-0.0012121212121212052,0.003090314856722882
+How did you become aware of these health promotion activities? (Select all that apply) [Email_or_newsletter]_Email_or_newsletter,-0.0012121212121212052,0.0030903148567228813
+Are you aware of various healt_Ord,-0.001515151515151499,0.004743174497726816
+Gender_Male,-0.0018181818181818002,0.004923659639173297
+Gender_Female,-0.0018181818181818002,0.004923659639173297
+Faculty_Faculty_of_clinical_sciences,-0.0027272727272727114,0.0041659779045052844
+How Often do you skip breakfas_Ord,-0.0030303030303030056,0.00542077085454493
+Are you aware of the recommend_Ord,-0.0033333333333333106,0.004970066505108079
+Department_Medical_radiography,-0.0033333333333333106,0.004970066505108079
+Do you reside on campus?_Ord,-0.003333333333333314,0.0043808582711517795
+"How did you become aware of these health promotion activities? (Select all that apply) [Email_or_newsletter]_Posters,_billboards,_flyers",-0.003333333333333314,0.00438085827115178
+Faculty_Faculty_of_health_sciences,-0.004545454545454519,0.00454545454545452
+Do you usually read nutrition _Ord,-0.006666666666666628,0.007015658728963777
