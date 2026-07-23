@@ -1,100 +1,293 @@
-# Algorithmic Behavioral Phenotyping: Predicting Health-Promotion Compliance via Multi-Domain Classification Pipelines
+# Behavioral Phenotyping of Undergraduate Health Compliance Using Machine Learning
 
-An end-to-end Machine Learning preprocessing and ensemble classification pipeline engineered to uncover, map, and predict multi-domain behavioral phenotypes governing health-promotion lifestyle compliance from sub-clinical community survey matrices.
+An end-to-end Machine Learning pipeline that classifies university undergraduate health compliance phenotypes (**Low Compliance** vs. **High Compliance**) using multi-dimensional survey data spanning demographics, lifestyle behaviours, environmental factors, and health awareness.
 
-## 🚀 Architectural Overview
-This framework automates features transformation and predictive validation boundaries using an isolated, leak-proof `Scikit-Learn Pipeline`. It strips string metric variances, standardizes numerical scaling boundaries, handles categorical multi-collinearity via dropping dummy traps, and trains a `RandomForestClassifier` ensemble to identify structural behavioral lifestyle predictors.
+The pipeline implements automated preprocessing, model benchmarking, explainable artificial intelligence (XAI), uncertainty estimation, and reproducible evaluation using a leak-proof Scikit-Learn workflow.
 
-## 📁 Repository Blueprint
+---
+
+# Key Highlights
+
+- **439 undergraduate participants**
+- **41 engineered behavioural features**
+- Automated preprocessing pipeline
+- 10-Fold Stratified Cross-Validation
+- Multi-model benchmarking
+- Explainable AI using Permutation Importance and SHAP
+- Bootstrap Confidence Intervals
+- Production-ready serialized pipeline
+
+---
+
+# Champion Model Performance
+
+| Metric | Value |
+|---------|------:|
+| Champion Model | Random Forest Classifier |
+| Number of Trees | 300 |
+| Maximum Depth | 6 |
+| Cross-Validation Accuracy | **75.1%** |
+| Cross-Validation ROC-AUC | **0.815** |
+| Cross-Validation F1-Score | **0.717** |
+| Holdout Accuracy | **80.0%** |
+| Holdout ROC-AUC | **0.846** |
+| 95% Bootstrap CI | **0.767 – 0.912** |
+| Brier Score | **0.171** |
+
+---
+
+# Cross-Validation Benchmark Results
+
+Models were evaluated using **10-Fold Stratified Cross-Validation** on the training dataset.
+
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|------|---------:|----------:|-------:|---------:|---------:|
+| **Random Forest** | **0.751** | **0.774** | **0.680** | **0.717** | **0.815** |
+| Gradient Boosting | 0.742 | 0.742 | 0.718 | 0.726 | 0.787 |
+| XGBoost | 0.723 | 0.722 | 0.705 | 0.708 | 0.790 |
+| LightGBM | 0.711 | 0.709 | 0.686 | 0.693 | 0.783 |
+| Logistic Regression | 0.690 | 0.694 | 0.667 | 0.676 | 0.747 |
+
+---
+
+# Holdout Test Classification Report
+
+Performance on previously unseen participants.
+
 ```text
-├── data/
-│   └── behavioural_phenotypes_data.xlsx      # Structured sub-clinical input workbook
-├── outputs/
-│   ├── behavioral_confusion_matrix.png       # Generated validation boundary map
-│   ├── behavioral_roc_curve.png              # Receiver Operating Curve graphic
-│   └── behavioral_feature_importances.png     # Gini Impurity feature importance profile
-├── model_pipeline.py                         # Production-grade standalone Python script
-├── requirements.txt                          # Project environmental requirements
-└── README.md                                 # Project documentation 
-```
-## 📊 Pipeline Validation Performance Metrics
-
-The workflow splits and evaluates out-of-sample data points using a stratified target strategy to ensure balanced phenotype representation across compliance classes.
-
-### Classification Boundary Report
-
-```
-==================================================
-CLASSIFICATION BOUNDARY REPORT
-==================================================
-
                  precision    recall  f1-score   support
 
- Low Compliance       0.62      0.75      0.68        57
-High Compliance       0.66      0.51      0.57        53
+ Low Compliance       0.78      0.86      0.82        57
+High Compliance       0.83      0.74      0.78        53
 
-       accuracy                           0.64       110
-      macro avg       0.64      0.63      0.63       110
-   weighted avg       0.64      0.64      0.63       110
+       accuracy                           0.80       110
+      macro avg       0.80      0.80      0.80       110
+   weighted avg       0.80      0.80      0.80       110
 ```
 
-### ROC-AUC Performance
+---
 
-**Receiver Operating Characteristic (ROC-AUC) Score:** `0.6984`
+# Key Behavioural Drivers
+
+Permutation Importance identified the strongest predictors of undergraduate health compliance.
+
+| Feature | Relative Importance |
+|---------|--------------------:|
+| Physical Exercise Routine | 0.150 |
+| Sexual Health Awareness | 0.020 |
+| Sexual Habits (Abstinence) | 0.020 |
+| Alcohol Avoidance Behaviour | 0.018 |
+| Dentistry Programme Enrollment | 0.018 |
+
+These findings indicate that health-promotion compliance emerges from behavioural, educational, and lifestyle interactions rather than isolated demographic variables.
 
 ---
 
-## 🔬 Core Algorithmic Discoveries
+# Repository Structure
 
-By tracking relative Gini impurity reductions, the model reveals that health-promotion compliance is not random but represents a behavioral phenotype strongly associated with environmental and academic factors.
-
-| Predictor | Relative Importance |
-|------------|-------------------|
-| Academic Level (Year of Study) | **29.26%** |
-| Information Access Point Uncertainty ("Somehow") | **9.21%** |
-| Hostel Co-habitation (Reside on Campus = Yes) | **8.72%** |
-
-### Key Findings
-
-- **Academic Level (Year of Study)** dictates **29.26%** of overall predictive compliance variance.
-- **Information Access Point Uncertainty ("Somehow")** contributes **9.21%** of decision splits.
-- **Hostel Co-habitation (Reside on Campus = Yes)** drives **8.72%** of model importance weight.
-
-These findings suggest that educational progression, information-seeking behavior, and living environment collectively shape health-promotion compliance patterns among undergraduate students.
+```text
+behavioral-phenotyping-ml/
+│
+├── data/
+│   └── behavioural_phenotypes_data.xlsx
+│
+├── outputs/
+│   ├── behavioral_phenotyping_pipeline.pkl
+│   ├── model_benchmark_results.csv
+│   ├── permutation_importances.csv
+│   ├── misclassified_cases.csv
+│   ├── confusion_matrix.png
+│   ├── roc_pr_curves.png
+│   └── shap_summary_plot.png
+│   ├── permutation_importances.png
+│
+├── train_phenotyping_model.py
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## ⚙️ Local Execution Instructions
+# Installation
 
-### Clone the Repository
+Clone the repository.
 
 ```bash
-git clone https://github.com/ikechukwukamalu8/algorithmic-behavioral-phenotyping.git
-cd algorithmic-behavioral-phenotyping
+git clone https://github.com/YOUR_USERNAME/behavioral-phenotyping-ml.git
 ```
 
-### Install Dependencies
+Move into the project directory.
+
+```bash
+cd behavioral-phenotyping-ml
+```
+
+Install dependencies.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Complete Pipeline
+---
+
+# Running the Pipeline
+
+Execute the complete workflow.
 
 ```bash
-python model_pipeline.py
+python train_phenotyping_model.py --data_path data/behavioural_phenotypes_data.xlsx
+```
+
+The script automatically performs:
+
+- Data loading
+- Data cleaning
+- Feature engineering
+- Missing value imputation
+- One-hot encoding
+- Feature scaling
+- Model benchmarking
+- Cross-validation
+- Holdout evaluation
+- Explainability analysis
+- Model serialization
+
+---
+
+# Data Processing Pipeline
+
+## Target Variable
+
+Survey responses were converted into a binary classification problem.
+
+| Survey Response | Encoded Class |
+|-----------------|--------------:|
+| Often | 1 |
+| Routinely | 1 |
+| Never | 0 |
+| Sometimes | 0 |
+
+---
+
+## Categorical Variables
+
+Categorical variables are processed using
+
+- Constant-value imputation ("Unknown")
+- One-Hot Encoding
+- Unknown-category protection (`handle_unknown="ignore"`)
+
+---
+
+## Ordinal Variables
+
+Frequency responses are mapped onto ordinal scales.
+
+| Response | Numeric Value |
+|-----------|--------------:|
+| Never | 0 |
+| Sometimes | 1 |
+| Often | 2 |
+| Routinely | 3 |
+
+All ordinal features are standardized using **StandardScaler**.
+
+---
+
+# Validation Strategy
+
+The workflow uses:
+
+- Stratified 75/25 Train-Test Split
+- 10-Fold Stratified Cross-Validation
+- ROC-AUC Evaluation
+- Precision
+- Recall
+- F1-score
+- Brier Score
+- 1,000 Bootstrap Confidence Interval Estimation
+
+This prevents information leakage while providing stable model estimates.
+
+---
+
+# Explainable Artificial Intelligence (XAI)
+
+Model interpretation is provided using two complementary techniques.
+
+## Permutation Importance
+
+Measures the reduction in predictive performance after randomly permuting each feature.
+
+Output:
+
+- `permutation_importances.csv`
+- `permutation_importance.png`
+
+---
+
+## SHAP (TreeSHAP)
+
+Explains individual feature contributions to model predictions.
+
+Output:
+
+- `shap_summary_plot.png`
+
+---
+
+# Generated Outputs
+
+After execution, the following artifacts are automatically generated.
+
+| Output | Description |
+|---------|-------------|
+| behavioral_phenotyping_pipeline.pkl | Serialized production pipeline |
+| model_benchmark_results.csv | Cross-validation benchmark |
+| permutation_importances.csv | Feature importance values |
+| misclassified_cases.csv | Holdout classification errors |
+| confusion_matrix.png | Confusion matrix visualization |
+| roc_pr_curves.png | ROC and Precision-Recall curves |
+| shap_summary_plot.png | SHAP explainability plot |
+
+---
+
+# Dependencies
+
+Major Python libraries include:
+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+- joblib
+- xgboost *(optional)*
+- lightgbm *(optional)*
+- shap *(optional)*
+
+Install all requirements using
+
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-## 📈 Project Summary
+# Citation
 
-This project investigates whether health-promotion compliance can be algorithmically characterized through behavioral phenotyping. Using supervised machine learning and interpretable classification pipelines, the framework identifies key demographic, academic, and environmental determinants associated with compliance outcomes.
+If you use this repository in academic work, please cite it as:
 
-The resulting model achieves:
+```text
+Kamalu, I. O.
+Behavioral Phenotyping of Undergraduate Health Compliance Using Machine Learning.
+GitHub Repository.
+```
 
-- **Accuracy:** 64%
-- **Macro F1-Score:** 0.63
-- **ROC-AUC:** 0.6984
+---
 
-These results demonstrate that meaningful predictive signals exist within multidomain behavioral data and support the development of data-driven interventions for improving health-promotion practices among university students.
+# License
+
+This project is released under the **MIT License**.
+
+See the `LICENSE` file for details.
