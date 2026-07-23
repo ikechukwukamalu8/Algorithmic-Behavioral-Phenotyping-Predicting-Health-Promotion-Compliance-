@@ -94,16 +94,17 @@ behavioral-phenotyping-ml/
 ├── outputs/
 │   ├── behavioral_phenotyping_pipeline.pkl
 │   ├── model_benchmark_results.csv
-│   ├── behavioral_feature_importances.csv
-│   ├── behavioral_feature_importances.png
+│   ├── permutation_importances.csv
+│   ├── permutation_importances.png
 │   ├── misclassified_cases.csv
-│   ├── behavioral_confusion_matrix.png
-│   ├── behavioral_roc_curve.png
+│   ├── confusion_matrix.png
+│   ├── roc_pr_curves.png
 │   └── shap_summary_plot.png
 │
 ├── train_phenotyping_model.py
 ├── requirements.txt
 └── README.md
+
 ```
 
 ---
@@ -250,6 +251,7 @@ After execution, the pipeline automatically generates the following artifacts.
 | `confusion_matrix.png` | Confusion matrix of the champion model on unseen data |
 | `roc_pr_curves.png` | Combined ROC and Precision–Recall curves |
 | `shap_summary_plot.png` | SHAP summary plot explaining global feature contributions (generated when SHAP is installed) |
+
 ---
 
 # Dependencies
