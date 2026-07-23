@@ -222,8 +222,8 @@ Measures the reduction in predictive performance after randomly permuting each f
 
 Output:
 
-- `permutation_importances.csv`
-- `permutation_importance.png`
+- `permutation_feature_importances.csv`
+- `permutation_feature_importance.png`
 
 ---
 
@@ -245,8 +245,8 @@ After execution, the pipeline automatically generates the following artifacts.
 |--------------|-------------|
 | `behavioral_phenotyping_pipeline.pkl` | Serialized production-ready machine learning pipeline |
 | `model_benchmark_results.csv` | Cross-validation benchmark results for all evaluated models |
-| `permutation_importances.csv` | Numerical permutation importance scores for every feature |
-| `permutation_importances.png` | Publication-quality visualization of the top predictive features |
+| `permutation_feature_importances.csv` | Numerical permutation importance scores for every feature |
+| `permutation_feature_importances.png` | Publication-quality visualization of the top predictive features |
 | `misclassified_cases.csv` | Misclassified observations from the holdout test set for error analysis |
 | `confusion_matrix.png` | Confusion matrix of the champion model on unseen data |
 | `roc_pr_curves.png` | Combined ROC and Precision–Recall curves |
