@@ -94,8 +94,8 @@ behavioral-phenotyping-ml/
 ├── outputs/
 │   ├── behavioral_phenotyping_pipeline.pkl
 │   ├── model_benchmark_results.csv
-│   ├── permutation_importances.csv
-│   ├── permutation_importances.png
+│   ├── permutation_feature_importances.csv
+│   ├── permutation_feature_importances.png
 │   ├── misclassified_cases.csv
 │   ├── confusion_matrix.png
 │   ├── roc_pr_curves.png
